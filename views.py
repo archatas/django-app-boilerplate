@@ -7,9 +7,11 @@ from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
 from .models import MyModel
 
 
-def mymodel_list(request):
+def mymodel_list(request, featured=False):
     paginate_by = 24
     qs = MyModel.objects.all()
+    if featured:
+        qs = qs.filter(is_featured=True)
 
     paginator = Paginator(qs, paginate_by)
     page_number = request.GET.get("page")
