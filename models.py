@@ -8,7 +8,7 @@ from django.utils.encoding import python_2_unicode_compatible
 
 @python_2_unicode_compatible
 class MyModel(models.Model):
-    title = models.CharField(_("Title", max_length=200))
+    title = models.CharField(_("Title"), max_length=200)
 
     class Meta:
         verbose_name = _("My Model")
