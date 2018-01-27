@@ -22,4 +22,4 @@ Or start a new Django CMS app with:
 $ django-admin.py startapp --template=https://github.com/archatas/django-app-boilerplate/archive/djangocms.zip app_name
 ```
 
-Then do a global search for "My App", "MyApp", "My Model", "My Models", "MyModel", "mymodel", "My Plugin", "My Plugin Model", "MyPluginModel", and "my\_plugin_model", and replace them with what you need there. Delete any unnecessary files.
+Then search for "My App", "MyApp", "My Models", "My Model", "MyModel", "mymodel" globally in the created directory, and replace the found strings with your app and model definitions. For Django CMS app also replace "My Plugin", "My Plugin Model", "MyPluginModel", and "my\_plugin_model" with your own plugin definitions. Delete any unnecessary files.
